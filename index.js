@@ -62,10 +62,10 @@ function init() {
                 message: 'What does the user need to know about contributing to the repo?',
             },
         ])
+
+    // created writeToFile function to write README file
+    .then((answers) => writeToFile('./result/README.md', generateMarkdown(answers)))
 }
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// Function call to initialize app
+// calling the function to initialize app
 init();

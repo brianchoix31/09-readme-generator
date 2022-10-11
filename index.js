@@ -9,7 +9,7 @@ function init() {
         .prompt([
             {
                 type: 'input',
-                name: 'username',
+                name: 'github',
                 message: 'What is your GitHub username?',
             },
             {
@@ -19,7 +19,7 @@ function init() {
             },
             {
                 type: 'input',
-                name: 'name',
+                name: 'title',
                 message: 'What is your project name?',
             },
             {
@@ -43,7 +43,7 @@ function init() {
             },
             {
                 type: 'input',
-                name: 'dependencies',
+                name: 'installation',
                 message: 'What command should be run to install dependencies?',
             },
             {
@@ -53,17 +53,17 @@ function init() {
             },
             {
                 type: 'input',
-                name: 'repo',
+                name: 'usage',
                 message: 'What does the user need to know about using the repo?',
             },
             {
                 type: 'input',
-                name: 'contribute',
+                name: 'contributing',
                 message: 'What does the user need to know about contributing to the repo?',
             },
         ])
 
-    // created writeToFile function to write README file
+    // stored user input data in answers, created writeToFile function to write README file
     .then((answers) => writeToFile('./result/README.md', generateMarkdown(answers)))
 }
 

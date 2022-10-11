@@ -10,9 +10,8 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// created generateMarkdown function for README file containing template with the user input data
+// create generateMarkdown function for README file containing template with the user input data
 function generateMarkdown(answers) {
-
   return `
   # ${answers.title}
 

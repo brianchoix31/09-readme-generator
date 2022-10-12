@@ -33,12 +33,8 @@ function init() {
                 message: 'What kind of license should your project have?',
                 choices: [
                     'Apache',
-                    'Academic',
                     'GNU',
-                    'ISC',
                     'MIT',
-                    'Mozilla',
-                    'Open'
                 ],
             },
             {

@@ -59,7 +59,7 @@ function init() {
             },
         ])
 
-        // store user input data in answers, then created function to write README file
+        // store user input data in answers, then create function to write README file
         .then((answers) => {
             fs.writeFile('README.md', generateMarkdown(answers),
             (err) => err ? console.log(err) : console.log('Successfully generated README.md!'))
